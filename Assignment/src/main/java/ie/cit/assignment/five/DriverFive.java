@@ -6,6 +6,10 @@ public class DriverFive {
 		init();
 	}
 	public static void init() {
-		
+		try {
+			Caller.init();
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 	}
 }

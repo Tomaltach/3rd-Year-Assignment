@@ -1,5 +1,6 @@
 package ie.cit.assignment;
 
+import ie.cit.assignment.five.DriverFive;
 import ie.cit.assignment.four.DriverFour;
 import ie.cit.assignment.one.factorymethod.Agency;
 import ie.cit.assignment.one.factorymethod.Company;
@@ -22,6 +23,9 @@ public class Main {
 		
 		System.out.println("\nLab 4:");
 		callLab4();
+
+		System.out.println("\nLab 5:");
+		callLab5();
 	}
 	private static void callLab1() {
 		factoryCall();
@@ -35,6 +39,9 @@ public class Main {
 	}
 	private static void callLab4() {
 		polling();
+	}
+	private static void callLab5() {
+		callback();
 	}
 	private static void factoryCall() {
 		//Company is only looking for a software developer.
@@ -64,5 +71,8 @@ public class Main {
 	}
 	private static void polling() {
 		DriverFour.init();
+	}
+	private static void callback() {
+		DriverFive.init();
 	}
 }
